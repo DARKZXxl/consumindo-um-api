@@ -1,4 +1,4 @@
-export function criarTrComImg(valor, text, url1, url2) {
+export function criarTrComImg(valor, text, url1, url2, compararacao) {
     const tr = document.createElement('tr')
     const td2 = document.createElement('td')
     const td1 = document.createElement('td')
@@ -7,7 +7,7 @@ export function criarTrComImg(valor, text, url1, url2) {
     imgGener.classList.add('imgGenero')
     td2.appendChild(imgGener)
     tr.append(td1, td2)
-    if(valor === 'male') {
+    if(valor === compararacao) {
         imgGener.src = url1
     } else {
         imgGener.src = url2
