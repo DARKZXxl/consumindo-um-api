@@ -1,6 +1,6 @@
 import { criarTr } from "./criarTr.js";
 import { criarTrComImg } from "./criarTrComImg.js";
-import { mudarCorDaCasa } from "../../mudarCorDaCasa.js";
+import { mudarCorDaCasa } from "./mudarCorDaCasa.js";
 
 async function requisicao() {
     const resposta = await fetch('https://hp-api.onrender.com/api/characters').then(res => res.json())
